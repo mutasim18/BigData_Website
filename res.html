@@ -6,69 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Results - Data Showdown</title>
     <style>
-        /* Reset default margin and padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Body styles */
+        /* Add your CSS styling here */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
             line-height: 1.6;
             margin: 0;
             padding: 0;
         }
 
-        /* Container styles */
-        .container {
-            display: flex;
-        }
-
-        /* Navigation styles */
-        nav {
+        header {
             background-color: #333;
             color: #fff;
-            width: 200px; /* Width of the navigation */
-            padding: 20px;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
         }
 
         nav ul {
             list-style-type: none;
-            padding: 0;
             margin: 0;
+            padding: 0;
+            text-align: center;
         }
 
         nav ul li {
-            margin-bottom: 10px;
+            display: inline;
+            margin-right: 20px;
         }
 
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            display: block;
-            padding: 8px;
-            border-radius: 4px;
         }
 
         nav ul li a:hover {
-            background-color: #555;
+            text-decoration: underline;
         }
 
-        /* Main content styles */
-        .main-content {
+        main {
             padding: 20px;
         }
 
-        header {
-            background-color: #444;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-bottom: 20px;
+        section {
+            margin-bottom: 30px;
         }
 
         /* Popup box styling */
@@ -126,57 +110,23 @@
 
 <body>
     <header>
-        <h1>Data Ingestion and Performance Comparison (Apache NiFi vs. Google Big Query)</h1>
+        <h1>Comparing machine learning performance on Big Query, Azure and Python</h1>
     </header>
-    <div class="container">
-        <nav>
-            <ul>
-                <li><a href="index.html">Introduction</a></li>
-                <li><a href="des.html">Description</a></li>
-                <li><a href="meth.html">Methodology</a></li>
-                <li><a href="res.html">Results</a></li>
-                <li><a href="con.html">Conclusion</a></li>
-                <li><a href="about.html">About Us</a></li>
-            </ul>
-        </nav>
-        <div class="main-content">
-            <h2>Results</h2>
-            <p>In our showdown of Google Big Query versus Apache NiFi for data prowess, we ventured into demand forecasting using the Arima model. But alas, when we tried to unleash the Arima magic within Apache NiFi, it seemed our forecast was cloudy. Despite Python triumphing with flying colors, our attempts to script a NiFi pipeline hit a data roadblock. This unexpected twist reminds us that in the data arena, even the mightiest tools may need a little fine-tuning to dance to the rhythm of complex analytics.</p>
-            <section>
-                <h2>Data Ingestion Efficiency</h2>
-                <button class="popup-btn" onclick="showPopup('nifi-popup')">Apache NiFi</button>
-                <button class="popup-btn" onclick="showPopup('bigquery-popup')">Google Big Query</button>
-                <div id="nifi-popup" class="popup">
-                    <div class="popup-content">
-                        <!-- Content for Apache NiFi popup goes here -->
-                        <p>When it comes to data ingestion efficiency, Apache NiFi's smooth operation and user-friendly interface make it a breeze to construct pipelines. With a plethora of pre-built processors covering various connectivity options, NiFi's library ensures a seamless flow of data from different sources and formats.</p>
-                        <button class="close-btn" onclick="hidePopup('nifi-popup')">Close</button>
-                    </div>
-                </div>
-                <div id="bigquery-popup" class="popup">
-                    <div class="popup-content">
-                        <!-- Content for Google Big Query popup goes here -->
-                        <p>On the flip side, Google Big Query focuses more on data storage, but it still plays well with others like Cloud Storage and Dataflow for effective data ingestion. However, compared to NiFi's detailed interface, setting up ingestion tasks in Big Query can feel like manual labor, requiring more hands-on configuration.</p>
-                        <button class="close-btn" onclick="hidePopup('bigquery-popup')">Close</button>
-                    </div>
-                </div>
-            </section>
-            <!-- Additional sections with popups -->
-        </div>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="des.html">Description</a></li>
+            <li><a href="meth.html">Methodology</a></li>
+            <li><a href="res.html">Results</a></li>
+            <li><a href="con.html">Conclusion</a></li>
+			<li><a href="about.html">About us</a></li>
+        </ul>
+    </nav>
+    <main>
+	<h2>Results</h2>
+            <!-- Add your Results content here -->
+            <p></p>
 
-    <script>
-        // JavaScript functions to show/hide popup boxes
-        function showPopup(id) {
-            var popup = document.getElementById(id);
-            popup.style.display = "block";
-        }
-
-        function hidePopup(id) {
-            var popup = document.getElementById(id);
-            popup.style.display = "none";
-        }
-    </script>
 </body>
 
 </html>
