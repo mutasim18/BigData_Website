@@ -40,20 +40,16 @@
             list-style-type: none;
             padding: 0;
             margin: 0;
-            text-align: center;
         }
 
         nav ul li {
-            display: inline;
-        }
-
-        nav ul li:not(:last-child) {
-            margin-right: 20px;
+            margin-bottom: 10px;
         }
 
         nav ul li a {
             color: #fff;
             text-decoration: none;
+            display: block;
             padding: 8px;
             border-radius: 4px;
         }
@@ -63,12 +59,8 @@
         }
 
         /* Main content styles */
-        main {
+        .main-content {
             padding: 20px;
-        }
-
-        section {
-            margin-bottom: 30px;
         }
 
         header {
@@ -78,9 +70,69 @@
             padding: 20px 0;
             margin-bottom: 20px;
         }
+
+        /* Results specific styles */
+        .result {
+            margin-bottom: 20px;
+        }
+
+        .result h3 {
+            margin-bottom: 10px;
+        }
+
+        .result p {
+            margin-bottom: 10px;
+        }
+
+        .popup-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .popup-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 20px;
+            z-index: 9999;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+            max-height: 80%;
+            overflow: auto;
+        }
+
+        .popup-content {
+            max-height: 100%;
+        }
+
+        .close-btn {
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        .close-btn:hover {
+            background-color: #bd2130;
+        }
     </style>
 </head>
-
 <body>
     <header>
         <h1>Comparing machine learning performance on Big Query, Azure and Python</h1>
