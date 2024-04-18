@@ -16,9 +16,11 @@
         /* Body styles */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f0f0f0;
             color: #333;
             line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
 
         /* Container styles */
@@ -47,10 +49,13 @@
         nav ul li a {
             color: #fff;
             text-decoration: none;
+            display: block;
+            padding: 8px;
+            border-radius: 4px;
         }
 
         nav ul li a:hover {
-            text-decoration: underline;
+            background-color: #555;
         }
 
         /* Main content styles */
@@ -156,44 +161,7 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <h2>Processing Throughput and Latency</h2>
-                <button class="popup-btn" onclick="showPopup('nifi-popup2')">Apache NiFi</button>
-                <button class="popup-btn" onclick="showPopup('bigquery-popup2')">Google Big Query</button>
-                <div id="nifi-popup2" class="popup">
-                    <div class="popup-content">
-                        <!-- Content for Apache NiFi popup goes here -->
-                        <p>In the realm of processing throughput and latency, Apache NiFi showcases its competitive edge, particularly excelling in tasks with moderate workloads and low latency demands. Its routing and transformation abilities seamlessly blend the data processing journey, ensuring a smooth ride along the information highway.</p>
-                        <button class="close-btn" onclick="hidePopup('nifi-popup2')">Close</button>
-                    </div>
-                </div>
-                <div id="bigquery-popup2" class="popup">
-                    <div class="popup-content">
-                        <!-- Content for Google Big Query popup goes here -->
-                        <p>On the other hand, Google Big Query is hailed for its lightning-fast analytical prowess, effortlessly handling colossal amounts of data in record time. Whether it's stream processing or batch analytics, Big Query's speed is a force to be reckoned with.</p>
-                        <button class="close-btn" onclick="hidePopup('bigquery-popup2')">Close</button>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <h2>Scalability and Fault Tolerance</h2>
-                <button class="popup-btn" onclick="showPopup('nifi-popup3')">Apache NiFi</button>
-                <button class="popup-btn" onclick="showPopup('bigquery-popup3')">Google Big Query</button>
-                <div id="nifi-popup3" class="popup">
-                    <div class="popup-content">
-                        <!-- Content for Apache NiFi popup goes here -->
-                        <p>In the battle of scalability and fault tolerance, Apache NiFi gears up with a scale-out design that, while requiring a few extra configurations, empowers it to handle rising data volumes with ease. Its fault tolerance mechanisms are as reliable as a sturdy safety net.</p>
-                        <button class="close-btn" onclick="hidePopup('nifi-popup3')">Close</button>
-                    </div>
-                </div>
-                <div id="bigquery-popup3" class="popup">
-                    <div class="popup-content">
-                        <!-- Content for Google Big Query popup goes here -->
-                        <p>Meanwhile, Google Big Query boasts an architecture designed to auto-scale based on data volumes and user demands, ensuring peak performance even with massive datasets. With fault resistance built-in, Big Query safeguards data integrity, minimizing the risk of system hiccups or data disasters.</p>
-                        <button class="close-btn" onclick="hidePopup('bigquery-popup3')">Close</button>
-                    </div>
-                </div>
-            </section>
+            <!-- Additional sections with popups -->
         </div>
     </div>
 
