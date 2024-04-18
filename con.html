@@ -96,7 +96,7 @@
             <section>
                 <h2>Conclusion</h2>
                 <!-- Content for the Conclusion page goes here -->
-                <p> Conclusion section.
+                <p> Overall, linear regression models provided the most consistent and higher R-squared values across platforms, especially in BigQuery and Azure. XGBoost and LightGBM had varied performances, with generally lower R-squared values compared to linear regression, except in Python where XGBoost performed fairly well. The results indicate that the choice of platform and the implementation specifics (SQL vs. Python) can significantly impact model performance. Also it should be noted that azure doesn’t have the XGboost library while Big Query(SQL) doesn’t have the lightGBM library which were the key limitations of this study. Even though these platforms might give convenience according to their respected ecosystem, for consistency we would recommend python overall. It is also important to note that future updates could impact the sustainability of our chosen platform. Python's rich ecosystem and active community make it a solid choice for machine learning projects, but careful consideration should be given to platform-specific limitations and dependencies.
                 </p>
             </section>
         </main>
