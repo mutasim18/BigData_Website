@@ -6,36 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Methodology - Data Showdown</title>
     <style>
-        /* Add your CSS styling here */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+        /* Reset default margin and padding */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
-        header {
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container styles */
+        .container {
+            display: flex;
+        }
+
+        /* Navigation styles */
+        nav {
             background-color: #333;
             color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        nav {
-            background-color: #444;
-            padding: 10px 0;
+            width: 200px; /* Width of the navigation */
+            padding: 20px;
         }
 
         nav ul {
             list-style-type: none;
-            margin: 0;
             padding: 0;
-            text-align: center;
+            margin: 0;
         }
 
         nav ul li {
-            display: inline;
-            margin-right: 20px;
+            margin-bottom: 10px;
         }
 
         nav ul li a {
@@ -47,50 +53,55 @@
             text-decoration: underline;
         }
 
-        main {
+        /* Main content styles */
+        .main-content {
             padding: 20px;
         }
 
-        section {
-            margin-bottom: 30px;
+        /* Header styles */
+        header {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Data Ingestion and Performance Comparison (Apache NiFi vs. Google
-Big Query</h1>
+        <h1>Data Ingestion and Performance Comparison (Apache NiFi vs. Google Big Query)</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index
-			<li><a href="about.html">Conclusion</a></li>.html">Introduction</a></li>
-            <li><a href="des.html">Description</a></li>
-            <li><a href="meth.html">Methodology</a></li>
-            <li><a href="res.html">Results</a></li>
-            <li><a href="con.html">Conclusion</a></li>
-			<li><a href="about.html">About us</a></li>
-        </ul>
-    </nav>
-    <main>
-	 <h2>Methodology</h2>
-        <!-- Content for the Methodology page goes here -->
-		<p>Setting up Apache NiFi locally involves a series of steps:
-
-Download the Apache NiFi binary package from the official website, choosing the appropriate package for your operating system.
-Extract the package contents to a directory of your choice.
-Ensure that Java is installed and configured correctly, setting the JAVA_HOME environment variable if necessary.
-Launch NiFi by executing the relevant script in the bin folder.
-Access the NiFi Web UI through a web browser at http://localhost:8080/nifi.
-For Google Big Query:
-
-Access the Google Cloud console and sign in with your Google account.
-If it's your first time, create a new project.
-Enable the Big Query API in the "APIs & Services" > "Library" section of the console.
-</p>
-    </main>
-    
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Introduction</a></li>
+                <li><a href="des.html">Description</a></li>
+                <li><a href="meth.html">Methodology</a></li>
+                <li><a href="res.html">Results</a></li>
+                <li><a href="con.html">Conclusion</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <h2>Methodology</h2>
+            <p>Setting up Apache NiFi locally involves a series of steps:</p>
+            <ol>
+                <li>Download the Apache NiFi binary package from the official website, choosing the appropriate package for your operating system.</li>
+                <li>Extract the package contents to a directory of your choice.</li>
+                <li>Ensure that Java is installed and configured correctly, setting the JAVA_HOME environment variable if necessary.</li>
+                <li>Launch NiFi by executing the relevant script in the bin folder.</li>
+                <li>Access the NiFi Web UI through a web browser at <a href="http://localhost:8080/nifi">http://localhost:8080/nifi</a>.</li>
+            </ol>
+            <p>For Google Big Query:</p>
+            <ol>
+                <li>Access the Google Cloud console and sign in with your Google account.</li>
+                <li>If it's your first time, create a new project.</li>
+                <li>Enable the Big Query API in the "APIs & Services" > "Library" section of the console.</li>
+            </ol>
+        </div>
+    </div>
 </body>
 
 </html>
